@@ -1,0 +1,286 @@
+/* Reset and basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  /* ... */
+    /* Header and navigation */
+    header {
+      background-color: #ffffff;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+    }
+  .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color:#2a90d9;
+  }
+  
+  .logo img {
+    height: 60px; /* Adjust the height of the logo as needed */
+    margin-right: 0.1px; /* Add some space between the logo and the title */
+    vertical-align: middle; /* Align the logo vertically with the text */
+  }
+  
+   
+  .divider {
+    border-right: 1px solid #2490e8; /* Vertical line */
+    height: 30px; /* Adjust the height of the line */
+    margin: 0 20px; /* Add space between logo and navbar */
+  }
+   
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 10;
+      padding: 5;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: #2490e8;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  
+    nav a:hover{
+      background-color: rgb(243, 243, 237);
+    }
+      
+      /* Main content area */
+      main {
+        padding: 20px;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      /* Reset and basic styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      /* Header styles */
+      /* ... */
+      
+  /* Candidate Registration section */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Candidate Profile section */
+  .profile-info,
+  .profile-education,
+  .profile-skills,
+  .profile-experience,
+  .profile-resume,
+  .profile-applications {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #edit-info,
+  #update-resume-btn {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #edit-info:hover,
+  #update-resume-btn:hover {
+    background-color: #0c7cd5;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #5775ee;
+  padding: 40px 0;
+  position: relative; /* Position relative for absolute positioning of the line */
+}
+
+/* Add a line above the footer */
+footer::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Position absolutely relative to the footer */
+  top: 0; /* Position the line at the top of the footer */
+  left: 0; /* Align the line to the left */
+  width: 100%; /* Full width of the footer */
+  height: 1px; /* Height of the line */
+  background-color: rgba(0, 0, 0, 0.1); /* Color of the line */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h3 {
+  font-size: 24px; /* Increase the font size */
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 18px; /* Increase the font size */
+}
+
+.footer-column ul li a {
+  color: #288ddb;
+  text-decoration: none;
+  font-size: 18px; /* Increase the font size */
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #2977bc;
+  font-size: 24px; /* Increase the font size */
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 18px; /* Increase the font size */
+}

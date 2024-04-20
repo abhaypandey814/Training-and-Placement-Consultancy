@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="jobListing.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.uRqyuwykYusvqUYIHfCOAgAAAA&pid=Api&P=0&h=180" alt="Logo"> 
+      <a>Training Placement Consultancy</a>
+    </div>
+    <div class="divider"></div> <!-- Added divider -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobListing.html">Job Listings</a></li>
+        <li><a href="candidateRegistration.html">Candidate Registration</a></li>
+        <li><a href="consultancyservices.html">Consultancy Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="job-listings">
+      <div class="container">
+        <h1>Job Listings</h1>
+        <div class="filters">
+          <div class="filter">
+            <label for="industry">Industry:</label>
+            <select id="industry">
+              <option value="">All</option>
+              <option value="tech">Technology</option>
+              <option value="finance">Finance</option>
+              <option value="marketing">Marketing</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="location">Location:</label>
+            <select id="location">
+              <option value="">All</option>
+              <option value="newyork">Mumbai</option>
+              <option value="sanfrancisco">Banglore</option>
+              <option value="chicago">chennai</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="experience">Experience Level:</label>
+            <select id="experience">
+              <option value="">All</option>
+              <option value="entry">Entry Level</option>
+              <option value="mid">Mid-Level</option>
+              <option value="senior">Senior Level</option>
+            </select>
+          </div>
+          <div class="filter">
+            <input type="text" id="search" placeholder="Search keywords">
+          </div>
+        </div>
+        <div class="job-list">
+          <div class="job-card">
+            <h3>Software Engineer</h3>
+            <p>Company: TechCorp</p>
+            <p>Location: San Francisco, CA</p>
+            <p>Experience Level: Mid-Level</p>
+            <button class="view-details">View Details</button>
+          </div>
+          <div class="job-card">
+            <h3>Marketing Manager</h3>
+            <p>Company: BrandBuzz</p>
+            <p>Location: New York, NY</p>
+            <p>Experience Level: Senior Level</p>
+            <button class="view-details">View Details</button>
+          </div>
+          <!-- Add more job cards here -->
+        </div>
+      </div>
+    </section>
+
+    <div class="job-details-modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Job Details</h2>
+        <h3>Job Title</h3>
+        <p>Company: </p>
+        <p>Location: </p>
+        <p>Experience Level: </p>
+        <h4>Job Description</h4>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>Responsibility 1</li>
+          <li>Responsibility 2</li>
+          <li>Responsibility 3</li>
+        </ul>
+        <h4>Qualifications</h4>
+        <ul>
+          <li>Qualification 1</li>
+          <li>Qualification 2</li>
+          <li>Qualification 3</li>
+        </ul>
+        <p>Application Deadline: </p>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer>
+    <div class="footer-content">
+        <footer>
+            <div class="container">
+              <div class="footer-top">
+                <div class="footer-column">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="consultancyservices.html">Services</a></li>
+                    <li><a href="jobListing.html">Job Listings</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Follow Us</h3>
+                  <ul class="social-links">
+                    <li><a href="images/fab fa-facebook-f"> <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>Legal</h3>
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>&copy; 2023 Training Placement Consultancy. All rights reserved.</p>
+      
+              </div>
+            </div>
+          </footer>
+    </div>
+  </footer>
+
+  <script src="jobListing.js"></script>
+</body>
+</html>

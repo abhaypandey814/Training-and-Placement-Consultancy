@@ -1,0 +1,224 @@
+/* Reset and basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header and navigation */
+  header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+  }
+.logo{
+  font-size: 20px;
+  font-weight: 900;
+  color:#2a90d9;
+}
+
+.logo img {
+  height: 60px; /* Adjust the height of the logo as needed */
+  margin-right: 0.1px; /* Add some space between the logo and the title */
+  vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+ 
+.divider {
+  border-right: 1px solid #2490e8; /* Vertical line */
+  height: 30px; /* Adjust the height of the line */
+  margin: 0 20px; /* Add space between logo and navbar */
+}
+ 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10;
+    padding: 5;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #2490e8;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  nav a:hover{
+    background-color: rgb(243, 243, 237);
+  }
+  /* Blog section */
+  .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .blog-post {
+    width: 48%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .post-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .post-excerpt {
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  /* Resources section */
+  .resource-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .resource-card {
+    width: 48%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .resource-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  /* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #5775ee;
+  padding: 40px 0;
+  position: relative; /* Position relative for absolute positioning of the line */
+}
+
+/* Add a line above the footer */
+footer::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Position absolutely relative to the footer */
+  top: 0; /* Position the line at the top of the footer */
+  left: 0; /* Align the line to the left */
+  width: 100%; /* Full width of the footer */
+  height: 1px; /* Height of the line */
+  background-color: rgba(0, 0, 0, 0.1); /* Color of the line */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h3 {
+  font-size: 24px; /* Increase the font size */
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 18px; /* Increase the font size */
+}
+
+.footer-column ul li a {
+  color: #288ddb;
+  text-decoration: none;
+  font-size: 18px; /* Increase the font size */
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #2977bc;
+  font-size: 24px; /* Increase the font size */
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 18px; /* Increase the font size */
+}
